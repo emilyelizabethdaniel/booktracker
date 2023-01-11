@@ -24,7 +24,7 @@ class NewBookPage extends StatefulWidget {
 class _NewBookPageState extends State<NewBookPage> {
   dynamic _bookName = "Unsaved Book";
 
-  void _incrementCounter() {
+  void _saveBook() {
     setState(() {
       _bookName = "Saved book!";
     });
@@ -48,9 +48,10 @@ class _NewBookPageState extends State<NewBookPage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        onPressed: _saveBook,
+        hoverColor: Colors.green,
+        tooltip: 'Add book',
+        child: const Icon(Icons.save),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }

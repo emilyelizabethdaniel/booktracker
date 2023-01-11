@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _addBookToLibrary,
-        tooltip: 'Increment',
+        tooltip: 'Add a new book to your library',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
